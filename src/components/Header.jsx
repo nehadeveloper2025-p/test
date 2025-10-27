@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import logo from "../assets/logo.png";
 export default function Header() {
    const [scrolled, setScrolled] = useState(false);
 
@@ -10,10 +10,10 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full py-4 px-6 lg:px-16 flex justify-between items-center bg-transparent  relative top-0 left-0 z-50">
+    <header className="py-4 px-6 lg:px-12 flex justify-between items-center bg-transparent  relative top-0 left-0 z-50">
          <div className="flex items-center gap-2">
       <img
-        src="/epaysliplogo.png"
+        src={logo}
         alt="ePay Slip Logo"
         className="w-32 object-contain shrink-0"  /* 2rem x 2rem = button height */
       />

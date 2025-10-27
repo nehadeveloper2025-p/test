@@ -84,7 +84,6 @@ export default function FeaturesPage() {
     background: "linear-gradient(180deg, var(--color-dark) 0%, #0a2238 100%)",
   }}
 >
-  <div className="mx-auto custom-container">
       <section className="text-center pt-8 pb-16">
       <h1
         className="
@@ -115,22 +114,19 @@ export default function FeaturesPage() {
       </section>
 
       {/* FEATURE CARDS GRID */}
-      <section className="mt-48 sm:mt-74 ">
-      <div className="flex flex-wrap content-center  justify-center">
+      <section className="mt-48 sm:mt-74">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
           {features.map((f,index) => (
-            <div className="w-full sm:w-1/2 lg:w-1/3 p-3" key={index}>
             <FeatureCard 
-            // key={f.index}         
+            key={f.index}         
               title={f.title}
               description={f.description}
                 icon={f.icon}
                 iconhover={f.iconhover}
             />
-            </div>
           ))}
         </div>
       </section>
-      </div>
     </main>
     </>
   );

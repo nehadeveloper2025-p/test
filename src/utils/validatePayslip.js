@@ -51,7 +51,7 @@ export function validatePayslip(
   else if (!isValidEmail(company.email))
     errors.company.email = "Enter a valid company email.";
   if (!isEmpty(company?.phone) && !isValidPhone(company.phone)) {
-    errors.company.phone = "Enter a valid company phone (10–15 digits).";
+    errors.company.phone = "Enter a valid company mobile no (10–15 digits).";
   }
 
   // Employee (core)
@@ -66,8 +66,8 @@ export function validatePayslip(
   }
   const empPhone = employee?.phone ?? employee?.phoneno;
   if (!isEmpty(empPhone) && !isValidPhone(empPhone)) {
-    errors.employee.phone = "Enter a valid phone (10–15 digits).";
-    errors.employee.phoneno = "Enter a valid phone (10–15 digits).";
+    errors.employee.phone = "Enter a valid mobile no (10–15 digits).";
+    errors.employee.phoneno = "Enter a valid mobile no (10–15 digits).";
   }
 
   // Employee extra fields — SKIPPABLE

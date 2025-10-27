@@ -7,19 +7,10 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import logoImg from "../assets/footerlogo.png";
-import footervackground from "../assets/footervackground.png";
 
 export default function Footer() {
   return (
-    <footer
-      className="py-10 px-6 relative bg-(--color-dark)"
-      style={{
-        backgroundImage: `url(${footervackground})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <footer className="py-10 px-6 relative bg-(--color-dark)">
       <div className="mx-auto custom-container">
         <div className="relative rounded-xl p-8 md:p-10 backdrop-blur-[35px] bg-[#FFFFFF1A] border border-white/20">
           {/* Top Row */}
@@ -27,7 +18,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="w-full md:w-1/5 flex justify-center md:justify-start">
               <img
-                src={logoImg}
+                src="/epaysliplogo.png"
                 alt="ePay Slip Logo"
                 className="w-32 object-contain"
               />

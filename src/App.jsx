@@ -12,13 +12,12 @@ import Features from "./pages/FeaturesPage.jsx";
 export default function App() {
   return (
     <>
+     <div className="min-h-screen">
+     
       <Router>
-      {/* Header component */}
-
       <Header />
-
-      {/* Main content */}
-      <main className="min-h-screen mx-auto">
+      {/* Main content  <div className="mx-auto max-w-6xl px-4">*/}
+      <main className="min-h-screen mx-auto max-w-[1100px] px-2">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
@@ -27,18 +26,7 @@ export default function App() {
       </main>
       <Footer />
     </Router>
-    {/* <Home /> */}
-    
-    {/* <AppBackground>
-      <Features /> */}
-     {/* <div className="mx-auto max-w-5xl px-4 py-10 bg-(--color-light)"> */}
-      {/* <WhyChooseUs /> */}
-      {/* </div> */}
-         {/* <Header />   */}
-         {/* <HeroSection /> */}
-         {/* <PayPage /> */}
-         {/* <Footer/> */}
-    {/* </AppBackground> */}
+    </div>
 
     </>
   );
