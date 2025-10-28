@@ -5,6 +5,7 @@ export default function MonthField({ value = "", onChange, color = "#10324F" }) 
     const y = (value || "").split("-")[0] || "";
     return /^\d{4}$/.test(y) ? +y : new Date().getFullYear(); // ← no more 0
   }, [value]);
+  
 
   const [open, setOpen] = useState(false);
   const [year, setYear] = useState(safeYear);
