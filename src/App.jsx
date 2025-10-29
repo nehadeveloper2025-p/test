@@ -9,14 +9,19 @@ import HeroSection from "./components/HeroSection.jsx";
 import WhyChooseUs from "./pages/WhyChooseUs.jsx";
 import Home from "./pages/HomePage.jsx";
 import Features from "./pages/FeaturesPage.jsx";
+import FAQ from "./pages/FAQ.jsx";
+
 export default function App() {
   return (
     <>
      <div className="min-h-screen">
-     
-      <Router>
+      <div className="bg-gray-50 min-h-screen flex items-center justify-center">
+        <WhyChooseUs />
+      {/* <FAQ /> */}
+    </div>
+      {/* <Router>
       <Header />
-      {/* Main content  <div className="mx-auto max-w-6xl px-4">*/}
+       Main content  <div className="mx-auto max-w-6xl px-4">
       <main className="min-h-screen mx-auto max-w-[1100px] px-2">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +30,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </Router>
+    </Router> */}
     </div>
 
     </>

@@ -102,33 +102,6 @@ export default function ProgressSlider({
         <p className="text-[11px] text-[#0f2a44]/70">{s.desc}</p>
       </div>
     </div>
-  //            <div
-  // key={s.id}
-  // ref={(el) => (itemRefs.current[i] = el)}
-  // onClick={() => {
-  //   onStepChange(s.id);
-  //   const el = document.querySelector(`[data-step-section="${s.id}"]`);
-  //   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  // }}
-  // className={`w-[180px] h-[90px] rounded-xl transition-all duration-300 cursor-pointer
-  //   flex flex-col justify-center px-5 py-4 bg-white
-  //   shadow-[0_8px_24px_rgba(16,50,79,0.08)]
-  //   border
-  //   ${isActive
-  //     ? "border-(--color-cta)"
-  //     : "border-(--color-light)"}
-  // `}>
-  //               <div className="text-left"> {/* ensures text stays left-aligned */}
-  //                 <p
-  //                   className={`mb-1 text-sm font-semibold ${
-  //                     isActive ? "text-[#10324F]" : "text-gray-700"
-  //                   }`}
-  //                 >
-  //                   {s.title}
-  //                 </p>
-  //                 <p className="text-[11px] text-gray-500">{s.desc}</p>
-  //               </div>
-  //             </div>
             );
           })}
         </div>
